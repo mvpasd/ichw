@@ -14,7 +14,7 @@ e.shapesize(2.1)
 f=turtle.Turtle()
 f.shapesize(2.5)
 h=[a,b,c,d,e,f]
-turtle.dot(40,"yellow")#太阳的大小与颜色
+a.dot(40,"yellow")#太阳的大小与颜色
 colors=['blue','green','red','black','orange','cornflowerblue'] #行星的颜色
 x=0
 while x>=-1:
