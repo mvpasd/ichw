@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""Foobar.py: Description of what foobar does.
+__author__ = "He Zeyu"
+__pkuid__  = "1800011821"
+__email__  = "1800011821@pku.edu.cn"
+"""
 import turtle
 import math
 turtle.setup(1.0,1.0)
