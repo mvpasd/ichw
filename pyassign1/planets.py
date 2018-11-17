@@ -32,9 +32,9 @@ def main():
         s.pensize(7)
         s.color(colors[x%6])
         s.penup()
-        s.goto((1+x%6)*50*math.sin(x/(1000*(1+x%6))),(1+x%6)*60*math.cos(x/(1000*(1+x%6))))
+        s.goto((1+x%6)*50*math.sin(x/(100*(1+x%6))),(1+x%6)*60*math.cos(x/(100*(1+x%6))))
         s.pendown()
-        s.goto((1+x%6)*50*math.sin((x+1)/(1000*(1+x%6))),(1+x%6)*60*math.cos((x+1)/(1000*(1+x%6))))
+        s.goto((1+x%6)*50*math.sin((x+1)/(100*(1+x%6))),(1+x%6)*60*math.cos((x+1)/(100*(1+x%6))))
         x=x+1
 if __name__ == '__main__':
     main()      
