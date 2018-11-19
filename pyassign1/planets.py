@@ -89,6 +89,7 @@ f.pendown()
 h=[a,b,c,d,e,f]
 x=0
 def cc(s,r,R,h,l):
+    s.speed(0)
     s.shape("circle")
     x=r*math.cos(math.radians(h))
     y=R*math.sin(math.radians(h))
