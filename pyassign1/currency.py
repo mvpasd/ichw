@@ -8,7 +8,7 @@ __email__  = "1800011821@pku.edu.cn"
 """
 from urllib.request import urlopen
 def ss(x,y,z):
-    #进行货币转换
+    #通过网站进行货币转换
     doc = urlopen('http://cs1110.cs.cornell.edu/2016fa/a1server.php?from='+x+'&to'+'='+y+'&amt'+'='+str(z))
     docstr = doc.read()
     doc.close()
@@ -24,6 +24,7 @@ def cccc(jstr):
     ccc=cc[2:f]
     return ccc
 def exchange(currency_from, currency_to, amount_from):
+    #货币转换并得到所需输出结果
     jstr=ss(currency_from, currency_to, amount_from) 
     ccc=cccc(jstr)
     print(ccc)
@@ -32,6 +33,7 @@ def test_ss():
     jstr=ss('USD','EUR',2.5)
     assert '{ "from" : "2.5 United States Dollars", "to" : "2.1589225 Euros", "success" : true, "error" : "" }'==jstr
 def test_cccc():
+    #测试结果处理模块
     jstr=ss('USD','EUR',2.5)
     ccc=cccc(jstr)
     assert '''"2.1589225 Euros"'''==ccc
