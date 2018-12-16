@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""tile.py: 解决铺砖方法数.
+
+__author__ = "He Zeyu"
+__pkuid__  = "1800011821"
+__email__  = "1800011821@pku.edu.cn"
+"""
 def brick(h,c,d,a,wall):
     alist=[]
     x=(h+1)%a
